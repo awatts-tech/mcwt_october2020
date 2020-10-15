@@ -24,23 +24,23 @@
         },
         {
             name: "Alessia	Hoey",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Farmington Hills",
+            favoriteFood: "Anything with Nutella",
+            hobbies: ['cooking', 'videogames', 'reading']
 
         },
         {
-            name: "Andrea	Flanders",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            name: "Andrea Flanders",
+            from: "Ann Arbor",
+            favoriteFood: "Pizza",
+            hobbies: ["bowling", "hiking", "dancing"]
 
         },
         {
             name: "April	Topolewski",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Warren",
+            favoriteFood: "Enchiladas",
+            hobbies: ['Outdoors/Nature', 'Soccer', 'D&D', 'Home Projects']
 
         },
         {
@@ -66,9 +66,9 @@
         },
         {
             name: "Charissa	Wersen",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Brooklyn",
+            favoriteFood: "Nachos",
+            hobbies: ["hiking," "cooking," "netflix"]
 
         },
         {
@@ -93,10 +93,10 @@
 
         },
         {
-            name: "Elizabeth	Collacott",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            name: "EliLizabeth	Collacott",
+            from: "FCA Stellantis",
+            favoriteFood: "Key Lime Pie",
+            hobbies: ['Quilting']
 
         },
         {
@@ -108,9 +108,9 @@
         },
         {
             name: "Jamie	Nolan",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Ferndale",
+            favoriteFood: "Tacos",
+            hobbies: ['travel', 'writing', 'music']
 
         },
         {
@@ -122,9 +122,9 @@
         },
         {
             name: "Kim	Hicks",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Detroit",
+            favoriteFood: "Seafood",
+            hobbies: ['spending time with family', 'travel', 'crafting']
 
         },
         {
@@ -143,16 +143,16 @@
         },
         {
             name: "Rose	Peruski",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "South Lyon",
+            favoriteFood: "Pizza or Pierogie",
+            hobbies: ["Cat Foster Mom", "Rewatching Schitt's Creek and The Office ad nausuem :)"]
 
         },
         {
             name: "Shannon	Hoey",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Clarence, NY",
+            favoriteFood: "mashed potatoes",
+            hobbies: ['snowboarding', 'sewing', 'biking']
 
         },
         {
@@ -192,9 +192,9 @@
         },
         {
             name: "Zina	Haddad",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Troy, MI",
+            favoriteFood: "Pasta",
+            hobbies: [Painting]
 
         },
     ];
