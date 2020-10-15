@@ -54,7 +54,7 @@
             name: "Asia	Watts",
             from: "Detroit",
             favoriteFood: "Pizza",
-            hobbies: [shopping]
+            hobbies: [shopping, reading]
 
         },
         {
