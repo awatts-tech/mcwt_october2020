@@ -52,9 +52,9 @@
         },
         {
             name: "Asia	Watts",
-            from: "",
-            favoriteFood: "",
-            hobbies: []
+            from: "Detroit",
+            favoriteFood: "Pizza",
+            hobbies: [shopping]
 
         },
         {
