@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./open-sans/OpenSans-Regular.ttf");
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+}
+
+section:nth-child(1) {
+  background-color: #e3e3e3;
+}
+section:nth-child(2) {
+  background-color: grey;
+}
+/* Blah blah blah */
+section:nth-child(3) {
+  background-color: #851c7e;
+}
+/* 
+ Make everything the same height 
+*/
+.text.bad-content {
+  font-family: "Open Sans";
+  height: 30rem;
+}
+
+
+img {
+  box-shadow: 1px 5px 14px 5px black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+.row {
+  height: 2rem;
+}
+
+.row:nth-child(even) {
+  background-color: black;
+}
+.row:nth-child(odd) {
+  background-color: white;
+}
+
+::selection {
+  background-color: red;
+}
