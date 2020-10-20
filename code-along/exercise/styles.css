@@ -1,0 +1,21 @@
+
+h1, h2 {
+    text-align: center;
+}
+
+header {
+    background-color: lightgray;
+}
+
+.facts-container > div {
+    background-color: pink;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+@media only screen and (min-width: 992px) {
+    .facts-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
