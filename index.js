@@ -68,7 +68,7 @@
             name: "Charissa	Wersen",
             from: "Brooklyn",
             favoriteFood: "Nachos",
-            hobbies: ["hiking," "cooking," "netflix"]
+            hobbies: ["hiking" ,"cooking", "netflix"]
 
         },
         {
@@ -82,7 +82,7 @@
             name: "Christina	Evans",
             from: "Plymouth, MI",
             favoriteFood: "Mediterranean",
-            hobbies: [Graphic Design, Painting, Yoga]
+            hobbies: ['Graphic Design', 'Painting', 'Yoga']
 
         },
         {
@@ -188,14 +188,14 @@
             name: "Venus	Wilborn",
             from: "Detroit, MI",
             favoriteFood: "Tacos",
-            hobbies: [Crafting]
+            hobbies: ['Crafting']
 
         },
         {
             name: "Zina	Haddad",
             from: "Troy, MI",
             favoriteFood: "Pasta",
-            hobbies: [Painting]
+            hobbies: ['Painting']
 
         },
     ];
