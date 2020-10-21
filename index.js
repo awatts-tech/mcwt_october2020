@@ -221,9 +221,15 @@
 
             })
 
+            const div = document.createElement('div');
+            div.classList.add('bio');
+
             const p = document.createElement('p');
             p.innerHTML = bio;
-            document.getElementById('container').appendChild(p);
+
+            div.appendChild(p);
+    
+            document.getElementById('container').appendChild(div);
             console.log(bio);
         }
 
