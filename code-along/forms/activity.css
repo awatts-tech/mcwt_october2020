@@ -1,0 +1,17 @@
+.radio-buttons label {
+    display: block;
+}
+
+input[type="text"] {
+    color: #444;
+    padding: .5rem 1rem;
+}
+
+form button {
+    background-color: lavender;
+    appearance: none;
+    border: 1px solid #222;
+    padding: .5rem 1rem;
+    color: gray;
+    transform: translate()
+}

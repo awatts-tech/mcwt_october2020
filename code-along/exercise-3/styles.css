@@ -1,0 +1,36 @@
+* {
+  border: 2px solid cornflowerblue;
+  margin: 5px;
+  padding: 3px;
+}
+/* body takes up full viewport and extends all the way to the edges. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+header {
+  display: flex;
+}
+article {
+  flex: 3;
+}
+main > div {
+  flex: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}

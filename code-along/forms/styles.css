@@ -1,0 +1,13 @@
+
+
+input[type="text"] {
+    color: red;
+}
+
+input[type="checkbox"] {
+    color: green;
+}
+
+.checkbox {
+    color: blue
+}
