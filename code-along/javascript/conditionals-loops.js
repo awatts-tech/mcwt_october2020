@@ -40,7 +40,7 @@ const houseLoan = 20000;
 /**
  * Check to see if I am able to add to my pockets
  */
-const maxPocketSize = 10;
+let maxPocketSize = 10;
 console.log(character.pockets.length);
 
 if (character.pockets.length < 10) {
@@ -120,3 +120,13 @@ console.log("Tools:", tools);
 /**
  * Add as many pieces of wood to your pocket as you can
  */
+maxPocketSize = 30;
+
+// while pockets length is less than maxPocketSize
+while (character.pockets.length < maxPocketSize) {
+  // Add wood to the array
+  character.pockets.push("wood");
+}
+console.log(character.pockets);
+console.log(character.pockets.length);
+
