@@ -64,3 +64,18 @@ function createBoilerPlate() {
 
 console.log(createBoilerPlate());
 console.log(createParagraph("Hello there"));
+
+
+function logWithColor(color) {
+    return function(message) {
+        console.log(`%c ${message}`, `background: ${color}; color: white; display: block;`);
+    }
+}
+
+const red = logWithColor('red');
+const green = logWithColor('green');
+
+red('This is my message');
+green('this is my green message');
+red('This is my message 1');
+
