@@ -216,9 +216,6 @@
                 if (index === student.hobbies.length - 2) {
                     bio += ' and ';
                 }
-
-
-
             })
 
             const div = document.createElement('div');
