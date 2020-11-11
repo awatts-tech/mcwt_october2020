@@ -68,5 +68,5 @@ for (let i = 0; i < animals.length; i++) {
   }
 }
 
-console.log(found);
+const opponent = prompt("What is your opponent?");
 // Print out the names of each animals
