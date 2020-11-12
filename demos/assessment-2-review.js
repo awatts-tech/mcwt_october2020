@@ -67,8 +67,8 @@ staff.find((person) => {
 });
 
 // To get the index, use findIndex
-staff.find((person) => {
-  person.title === "TA"; // { name: "Tiia", title: "TA" }
+staff.findIndex((person) => {
+  person.title === "TA"; // 2
 });
 
 // Finding the maximum
