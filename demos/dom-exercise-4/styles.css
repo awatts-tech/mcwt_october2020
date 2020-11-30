@@ -1,0 +1,54 @@
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    width: 200px;
+    box-sizing: border-box;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+input{
+    width: 62px;
+}
+button{
+    background-color: lightseagreen;
+    height: 30px;
+    width: 100px;
+}
+img{
+    width: 100px;
+}
+#money{
+    text-align: center;
+}
+.penny{
+    width: 150px;
+}
+.nickel{
+    width: 100px;
+    padding: 0 20px;
+}
+.dime{
+    width: 85px;
+    padding: 0 20px;
+}
+.quarter{
+    width: 110px;
+    padding:0 20px;
+}
+#total-value{
+    font-size: 30px;
+}
+#total{
+    text-align: center;
+}
+Collapse
+
+
+

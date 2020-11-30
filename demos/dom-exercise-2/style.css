@@ -1,0 +1,53 @@
+.hidden {
+	display: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+    padding: 2rem;
+    width: 100%;
+    margin: auto;
+    max-width: 992px;
+    font-size: 1.5rem;
+}
+
+header {
+	display: flex;
+	background: lightgrey;
+	flex-direction: row-reverse;
+    padding: 5px;
+    position: relative;
+}
+
+nav {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 0 1.5rem;
+    border: 1px solid grey;
+}
+
+nav ul {
+    padding: 0;
+}
+nav li {
+    list-style-type: none;
+    margin: 1rem 0;
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+}
+
+button {
+	appearance: none;
+	background: none;
+    border: 0;
+    font-size: 1.5rem;
+}

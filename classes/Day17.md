@@ -1,11 +1,13 @@
 # Day 17
+## Announcements 
+- Working on points from Retro
+- Can plan on break at 8:45 all times
 
 ## Schedule
-- Any questions on Lab/Study Materials?
-- Lecture: Agile
+- Questions from Assessment?  
+- Lecture: DOM
 - Break
-- Scrum Practice 30 minutes
-- Lecture: Agile
+- DOM Practice: Animal Crossings
 - Break
-- Lab / Study / Practice Time
-- BJ has to finish 1-on-1s -- don't let me forget :)
+- Joe Visit
+- DOM Exercise #1
