@@ -1,51 +1,53 @@
 let totalValue = 0;
-document.getElementById("submit").addEventListener("click", makeMoney);
+document.getElementById('submit').addEventListener('click', makeMoney);
+
+const values = {
+	penny: 0.01,
+	nickel: 0.05,
+	dime: 0.1,
+	quarter: 0.25,
+};
+
 function makeMoney(event) {
-  event.preventDefault();
-//   console.log(event);
-  let number = document.getElementById("number").value;
-//   console.log(number);
-  let coin = document.getElementById("coin-dropdown").value;
-//   console.log(coin);
-  for (number; number > 0; number--) {
-    let newCoin = document.createElement("img");
-    newCoin.onclick = removeCoin;
-    if (coin === "penny") {
-      newCoin.src = "penny.png";
-      newCoin.className = "penny";
-      totalValue += 0.01;
-    } else if (coin === "nickel") {
-      newCoin.src = "nickel.png";
-      newCoin.className = "nickel";
-      totalValue += 0.05;
-    } else if (coin === "dime") {
-      newCoin.src = "dime.png";
-      newCoin.className = "dime";
-      totalValue += 0.1;
-    } else if (coin === "quarter") {
-      newCoin.src = "quarter.png";
-      newCoin.className = "quarter";
-      totalValue += 0.25;
-    }
-    document.querySelector("#money").appendChild(newCoin);
-    let addToTotal = document.getElementById("total-value");
-    addToTotal.innerHTML = "Total Value: $" + totalValue.toFixed(2);
-  }
+	event.preventDefault();
+	let number = document.getElementById('number').value;
+	let coin = document.getElementById('coin-dropdown').value;
+
+	for (number; number > 0; number--) {
+		let newCoin = document.createElement('div');
+		newCoin.addEventListener('click', removeCoin);
+
+		// Set data-* attribute
+		newCoin.dataset.value = coin;
+
+		newCoin.classList.add('coin');
+		newCoin.classList.add(coin);
+
+		const toAdd = values[coin];
+		newCoin.innerHTML = (toAdd * 100) + 'c';
+		totalValue += toAdd;
+
+		document.querySelector('.coins').appendChild(newCoin);
+
+		setTotal();
+	}
 }
-function removeCoin(remove) {
-    const className =  remove.target.className;
-  if (className === "penny") {
-    totalValue -= 0.01;
-  } else if (className === "nickel") {
-    totalValue -= 0.05;
-  } else if (className === "dime") {
-    totalValue -= 0.1;
-  } else if (className === "quarter") {
-    totalValue -= 0.25;
-  }
-  let removeFromTotal = document.getElementById("total-value");
- 
-    removeFromTotal.innerHTML = "Total Value: $" + totalValue.toFixed(2).toString();
-// }
-  remove.target.remove();
+
+function setTotal() {
+	// Ensure total is positive 0
+	if (totalValue === -0) {
+		totalValue = 0;
+	}
+	const total = document.getElementById('total-value');
+	total.innerHTML = `Total Value: $ ${totalValue.toFixed(2)}`;
+}
+
+function removeCoin(event) {
+	const value = event.target.dataset.value || 0;
+
+	toRemove = values[value];
+	totalValue -= toRemove;
+	setTotal();
+
+	event.target.remove();
 }
