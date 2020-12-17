@@ -17,14 +17,11 @@ function makeMoney(event) {
 		let newCoin = document.createElement('div');
 		newCoin.addEventListener('click', removeCoin);
 
-		// Set data-* attribute
-		newCoin.dataset.value = coin;
-
 		newCoin.classList.add('coin');
 		newCoin.classList.add(coin);
 
 		const toAdd = values[coin];
-		newCoin.innerHTML = (toAdd * 100) + 'c';
+		newCoin.innerHTML = toAdd * 100;
 		totalValue += toAdd;
 
 		document.querySelector('.coins').appendChild(newCoin);
@@ -43,11 +40,12 @@ function setTotal() {
 }
 
 function removeCoin(event) {
-	const value = event.target.dataset.value || 0;
+	const value = parseInt(event.target.innerText) || 0;
 
-	toRemove = values[value];
-	totalValue -= toRemove;
-	setTotal();
+	if (value) {
+		totalValue -= value / 100;
+		setTotal();
+	}
 
 	event.target.remove();
 }
