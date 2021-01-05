@@ -1,4 +1,8 @@
+First: install Angular 
+`npm i -g @angular/cli`
+
 Here are the following steps to get started with an Angular project:
+
 
 1. Make sure you're not already in a git repository.
    Angular creates the repo for you.
