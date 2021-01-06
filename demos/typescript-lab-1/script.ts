@@ -38,7 +38,7 @@ let products: Product[] = [
 
 function calcAverageProductPrice(products: Product[]): number {
 	let total: number = 0;
-
+	
 	for (let product of products) {
 		total += product.price;
 	}
@@ -51,7 +51,7 @@ let averagePrice: number = calcAverageProductPrice(products);
 console.log(averagePrice);
 
 interface InventoryItem {
-	product: Product;
+	product: Product
 	quantity: number;
 }
 
