@@ -43,8 +43,8 @@ let batman: Person;
 let robin: Person = { firstName: 'Robin', over21: false };
 
 // Function Types
-function isOver21(person: Person): boolean {
-	return person.over21;
+function isOver21(person: Person): boolean { // takes in a variable that implements the type Person, returns a boolean
+	return person.over21; // because over21 is true or false, it matches the return value
 }
 
 // Classes
@@ -57,7 +57,7 @@ class SuperHero implements Person {
 	fightCrime() {}
 }
 
-function fightCrime(hero: SuperHero) {
+function fightCrime(hero: SuperHero) { // takes in a variable that matches the SuperHero interface
 	console.log('Fighting crime with', hero);
 }
 
