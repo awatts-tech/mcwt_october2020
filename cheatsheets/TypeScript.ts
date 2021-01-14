@@ -59,13 +59,14 @@ class SuperHero implements Person {
 
 function fightCrime(hero: SuperHero) { // takes in a variable that matches the SuperHero interface
 	console.log('Fighting crime with', hero);
+	// notice no return value
 }
 
 // fightCrime(batman);
 fightCrime(new SuperHero());
 
-interface Bystander extends Person {
+interface Bystander extends Person { // this means that Bystander will have the properties of Person + what we declare here
 	firstName: string;
 	over21: boolean;
-	isHelpless: boolean;
+	isHelpless: boolean; // isHelpless is specific to Bystander
 }
