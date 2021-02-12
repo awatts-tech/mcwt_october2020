@@ -110,7 +110,7 @@ routes.put("/:routeId", (req, res) => {
     // Add to array
     //removes 1 item from the array, starting at the index provided,
     // then adds newStudent in its place
-    // routes.splice(index, 1, newRoute);
+    routes.splice(index, 1, newRoute);
 
   res.json(newRoute);
 });
@@ -120,10 +120,10 @@ routes.delete("/:id", (req, res) => {
     // use this id as a way of finding your
     // item
     const index = routesList.findIndex( (route) => {
-        return route.id === id;
+        return route.id === req.params.id;
     })
 
-    // routes.splice(index, 1);
+    routes.splice(index, 1);
     res.status(204)
     res.json("Deleted");
 });
