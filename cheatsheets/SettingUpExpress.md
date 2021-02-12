@@ -55,18 +55,17 @@ const routesList = [];
 routes.get("/", (req, res) => {
     // this is the logic to return a list of items
     // you may have code in here that accept query strings
+    let returnedRoutes = routesList; // setting it to the full list
 
     // adding a query to get a subset of your
     // data
     if ( req.query.name ) {
-        const filteredRoutes = routesList.filter( (route) => {
+        returnRoutes = routesList.filter( (route) => {
              return route.name === req.query.name
         })
-
-        res.json(filteredRoutes);
     }
 
-     res.json(routesList);
+     res.json(returnedRoutes);
 });
 
 routes.get("/:routeId", (req, res) => {
