@@ -23,15 +23,18 @@ Example server.js
 
 ```
 const express = require('express');
+
+// Allows you to use path params, body, and
+// query string parameters
+app.use(express.json());
+
 const port = 3000
 
 // Import routes file, this is where
 // the API logic will go
 const routes = require('./routes.js');
 
-// Allows you to use path params, body, and
-// query string parameters
-app.use(express.json());
+
 
 // the routes module will serve
 // the API from /my-routes
