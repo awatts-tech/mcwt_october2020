@@ -29,13 +29,13 @@ const port = 3000
 // the API logic will go
 const routes = require('./routes.js');
 
-// the routes module will serve
-// the API from /my-routes
-app.use('/my-routes', routes);
-
 // Allows you to use path params, body, and
 // query string parameters
 app.use(express.json());
+
+// the routes module will serve
+// the API from /my-routes
+app.use('/my-routes', routes);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
