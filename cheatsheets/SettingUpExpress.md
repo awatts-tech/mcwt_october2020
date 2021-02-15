@@ -24,6 +24,8 @@ Example server.js
 ```
 const express = require('express');
 
+const app = express();
+
 // Allows you to use path params, body, and
 // query string parameters
 app.use(express.json());
