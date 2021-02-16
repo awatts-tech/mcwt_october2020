@@ -55,8 +55,9 @@ const express = require('express');
 const routes = express.Router();
 
 // logic for our endpoints
-const routesList = [];
+const routesList = [{id: 2}];
 
+// localhost:3000?name=BJ
 routes.get("/", (req, res) => {
     // this is the logic to return a list of items
     // you may have code in here that accept query strings
@@ -73,11 +74,12 @@ routes.get("/", (req, res) => {
      res.json(returnedRoutes);
 });
 
+// localhost:3000/2 
 routes.get("/:routeId", (req, res) => {
     // this is the logic to a single item by id
     // whatever you have after the : is set to the params variable
     // for example:
-    const id = req.params.routeId;
+    const id = req.params.routeId; // 2
 
     // use this id as a way of finding your
     // item
