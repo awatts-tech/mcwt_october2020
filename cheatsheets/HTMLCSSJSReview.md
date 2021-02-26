@@ -39,7 +39,7 @@ Questions:
 
 - What does is mean to have "semantic" tags? Why is it important?
 - How do you create a radio button?
-- What is the benefit of wrapping a form in a label?
+- What is the benefit of wrapping a form element in a label?
 
 ## CSS
 
