@@ -97,7 +97,7 @@ Given
     <li> List 2 </li>
     <li> List 3 </li>
 </ul>
-``
+```
 
 How could you use display flex to make the list items display top-to-bottom on mobile and side-to-side on all other screen sizes?
 
