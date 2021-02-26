@@ -102,29 +102,36 @@ Given
 How could you use display flex to make the list items display top-to-bottom on mobile and side-to-side on all other screen sizes?
 
 ### Questions
+
 - What is the difference between using px and rem?
 - How do select an item based on
-    - an id
-    - a class
-    - Whether it's parent is a certain type (for example, all the `<p>` tags inside of a `<section>`)
+  - an id
+  - a class
+  - Whether it's parent is a certain type (for example, all the `<p>` tags inside of a `<section>`)
 - When we say "mobile-first", what screen sizes should be in your media queries?
 
 ## JavaScript
+
 JavaScript controls the logic of your page. It allows you to dynamically set or move content around. It is what makes web apps useful and powerful.
 
 ### Anatomy of JavaScript
-JavaScipt is made of *variables*, which is your data, *control structures*, which is your logic, and  *functions and classes*, which allow you to re-use data and logic in multiple places.
+
+JavaScipt is made of _variables_, which is your data, _control structures_, which is your logic, and _functions and classes_, which allow you to re-use data and logic in multiple places.
 
 #### Variables
+
 Variables contain data, and then can be one of 9 different types: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures.
 
 #### Control Structures
+
 Controls strucures are ways of controlling the flow of your data. They are the heart and soul of programming, and is what makes programming dynamic and reusable. There are a number of structures (https://en.wikibooks.org/wiki/JavaScript/Control_structures), but they boil down to two types:
 
 ##### Loops
+
 Loops allow you to run the same block of code repeatedly, until a certain condition is reached.
 
 For example
+
 ```
 
     for (let i = 1; i < 10; i++) {
@@ -132,13 +139,15 @@ For example
     }
 
 ```
+
 will count to 10.
 
-
 #### Conditionals
+
 Conditionals are used to say, if a certain condition is true, execute this block of code.
 
 For example
+
 ```
 
 if ( color === 'red' ) {
@@ -148,11 +157,66 @@ if ( color === 'red' ) {
 }
 
 ```
+
 You can combine `if` statements using `&&` for "and", or `||` for "or"
 
+### Functions
+
+Functions allow you to re-use blocks of code, and pass in different data to make it dynamic.
+
+For example
+
+```
+    function sayHello(name) {
+        console.log(`Hello, ${name}`);
+    }
+
+```
+
+will create a variable called name, that is set to what ever you pass into it. This is called a _parameter_.
+
+So you can call the function using
+
+```
+    sayHello("Grant Chirpus");
+    sayHello("Batman");
+```
+
+this the data that you pass into a function is called an _argument_.
+
+A new version of writing functions is using arrow functions, which uses this syntax:
+
+```
+    const sayHello = (name) => console.log(`Hello, ${name}`);
+```
+
+Arrow functions are nice because they allow you to write the same thing with much less code.
+
+### Classes
+
+Classes are a way of easily creating an object based on reusable logic. Classes contain both variables and functions, that are scoped to the individual object that is created from a class. Variables inside of classes are called _properties_, and functions are called _methods_.
+
+for example
+
+```
+class Car  {
+    speed = 0;
+    drive() {
+        this.speed++;
+    }
+}
+const car = new Car();
+car.drive();
+const car1 = new Car();
+
+```
+
+will create an 2 separate objects. `car` will finish with a speed of 1, where `car1` still has a speed of `0`;
 
 #### Questions
-- What is the difference between var, const, and let?
+
+- What is the difference between var, const, let, and this?
 - When should you use a `while` loop vs for `loop`?
 - What is the difference between `=` , `==` and `===`?
 - What is "hoisting"?
+- What are three ways to loop through all the items in an array?
